@@ -1,0 +1,101 @@
+[
+  {
+    "model": "catalogue.membre",
+    "pk": 1,
+    "fields": { "nom": "Dupont", "prenom": "Jean" }
+  },
+  {
+    "model": "catalogue.membre",
+    "pk": 2,
+    "fields": { "nom": "Martin", "prenom": "Sophie" }
+  },
+  {
+    "model": "catalogue.membre",
+    "pk": 3,
+    "fields": { "nom": "Durand", "prenom": "Paul" }
+  },
+  {
+    "model": "catalogue.livre",
+    "pk": 1,
+    "fields": { "nom": "L'Étranger", "disponible": true, "auteur": "Albert Camus" }
+  },
+  {
+    "model": "catalogue.livre",
+    "pk": 2,
+    "fields": { "nom": "Le Petit Prince", "disponible": false, "auteur": "Antoine de Saint-Exupéry" }
+  },
+  {
+    "model": "catalogue.livre",
+    "pk": 3,
+    "fields": { "nom": "1984", "disponible": true, "auteur": "George Orwell" }
+  },
+  {
+    "model": "catalogue.dvd",
+    "pk": 1,
+    "fields": { "nom": "Inception", "disponible": true, "realisateur": "Christopher Nolan" }
+  },
+  {
+    "model": "catalogue.dvd",
+    "pk": 2,
+    "fields": { "nom": "Intouchables", "disponible": false, "realisateur": "Olivier Nakache" }
+  },
+  {
+    "model": "catalogue.cd",
+    "pk": 1,
+    "fields": { "nom": "Random Access Memories", "disponible": true, "artiste": "Daft Punk" }
+  },
+  {
+    "model": "catalogue.cd",
+    "pk": 2,
+    "fields": { "nom": "AM", "disponible": true, "artiste": "Arctic Monkeys" }
+  },
+  {
+    "model": "catalogue.jeudeplateau",
+    "pk": 1,
+    "fields": { "nom": "Catan", "createur": "Klaus Teuber" }
+  },
+  {
+    "model": "catalogue.emprunt",
+    "pk": 1,
+    "fields": {
+      "membre": 2,
+      "media_type": "livre",
+      "media_id": 2,
+      "date_emprunt": "2025-05-01T10:00:00Z",
+      "date_retour": null
+    }
+  },
+  {
+    "model": "catalogue.emprunt",
+    "pk": 2,
+    "fields": {
+      "membre": 2,
+      "media_type": "dvd",
+      "media_id": 2,
+      "date_emprunt": "2025-05-10T10:00:00Z",
+      "date_retour": null
+    }
+  },
+  {
+    "model": "catalogue.emprunt",
+    "pk": 3,
+    "fields": {
+      "membre": 3,
+      "media_type": "livre",
+      "media_id": 2,
+      "date_emprunt": "2025-05-20T10:00:00Z",
+      "date_retour": null
+    }
+  },
+  {
+    "model": "catalogue.emprunt",
+    "pk": 4,
+    "fields": {
+      "membre": 1,
+      "media_type": "livre",
+      "media_id": 1,
+      "date_emprunt": "2025-05-25T10:00:00Z",
+      "date_retour": "2025-05-30T10:00:00Z"
+    }
+  }
+]
